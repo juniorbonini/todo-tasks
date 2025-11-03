@@ -17,6 +17,9 @@ export const Color = {
     "purple-dark": "#5E60CE",
   },
   red: {
-    red: "#E25858",
+    'red': "#E25858",
   },
+  black: {
+    'black': '#000000'
+  }
 };
