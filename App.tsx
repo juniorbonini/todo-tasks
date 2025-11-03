@@ -3,11 +3,13 @@ import {
   Inter_700Bold,
   useFonts,
 } from "@expo-google-fonts/inter";
-import { Loading } from "./src/components/Loading";
-import { View } from "react-native";
-import { Color } from "./src/styles/Color";
-import { Header } from "./src/components/Header";
-import { Input } from "./src/components/Input";
+import { TextInput, View } from "react-native";
+
+import { Color } from "@/styles/Color";
+import { Input } from "@/components/Input";
+import { Header } from "@/components/Header";
+import { Loading } from "@/components/Loading";
+
 
 export default function App() {
   const backgroundColor = Color.gray[700];
@@ -28,7 +30,9 @@ export default function App() {
       }}
     >
       <Header />
-      <View>
+      <View style={{
+        justifyContent: 'center'
+      }}>
         <Input />
       </View>
     </View>

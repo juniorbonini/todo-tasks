@@ -1,13 +1,14 @@
 import { StyleSheet } from "react-native";
-import { fontFamily } from "../../styles/fontFamily";
-import { Color } from "../../styles/Color";
+import { Color, fontFamily } from "@/styles/globalStyle";
 
 export const styles = StyleSheet.create({
   container: {
     width: "100%",
     height: 54,
-    paddingHorizontal: 24,
-    marginTop: -25
+    marginTop: -25,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 5
   },
   input: {
     fontFamily: fontFamily.regular,
